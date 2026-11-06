@@ -1,5 +1,29 @@
 # api-lab
 
+# API Testing Lab (QuickPizza)
+
+This repository contains automated API integration tests for the QuickPizza API using `pytest` and `requests`.
+
+## Setup and Installation
+
+1. Create and activate a virtual environment:
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    pip install pytest-html
+
+## Running the Tests
+
+- Run all tests with verbose output:
+   ```bash
+   pytest -v
+- Run all tests and generate a self-contained HTML report:
+    ```bash
+    python -m pytest -v --html=report.html --self-contained-html
+
 ## Input Domain Model: POST /api/ratings
 
 | Characteristic | Blocks | Values in the tests | Test covering the block |
